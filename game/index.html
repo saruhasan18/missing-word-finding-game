@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missing Word Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Find the Missing Word</h1>
+    
+    <!-- Difficulty Selection -->
+    <div id="difficultySelection">
+        <p>Select Difficulty:</p>
+        <button onclick="setDifficulty('easy')">Easy</button>
+        <button onclick="setDifficulty('moderate')">Moderate</button>
+        <button onclick="setDifficulty('difficult')">Difficult</button>
+    </div>
+
+    <!-- Game Content (Initially Hidden) -->
+    <div id="gameContainer" style="display: none;">
+        <div class="word-container" id="wordDisplay"></div>
+        <input type="text" id="guessInput" class="input-box" placeholder="Enter a letter" maxlength="1">
+        <button id="guessButton">Guess</button>
+        <p class="message" id="message"></p>
+
+        <h2>HOLLYWOOD</h2>
+        <div class="hollywood-container" id="hollywoodDisplay">
+            <span>H</span> <span>O</span> <span>L</span> <span>L</span> <span>Y</span> <span>W</span> <span>O</span> <span>O</span> <span>D</span>
+        </div>
+    </div>
+
+    <!-- Popup Message -->
+    <div id="popup" class="popup"></div>
+
+    <link rel="stylesheet" href="css/styles.css">
+<script src="js/words.js"></script> 
+<script src="js/script.js"></script>
+
+</html>
